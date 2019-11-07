@@ -1,0 +1,10 @@
+if(current.valid_to <= gs.nowDateTime()){ 
+   gs.addInfoMessage('Invalid date.Please enter future date'); 
+   current.setAbortAction(true); 
+   } 
+else 
+   { 
+   current.workflow_state = 'published'; 
+   current.update(); 
+   } 
+action.setRedirectURL(current); 

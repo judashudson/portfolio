@@ -1,0 +1,1 @@
+var catItem = new GlideRecord('sc_cat_item_content');
